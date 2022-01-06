@@ -117,3 +117,6 @@ const addTextToImage = async (filename) => {
 };
 
 main();
+setInterval(() => {
+  main();
+}, 1000 * 60 * 2);
