@@ -1,0 +1,28 @@
+{
+  "name": "twitter-header-contributions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreivdev/twitter-header-contributions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreivdev/twitter-header-contributions/issues"
+  },
+  "homepage": "https://github.com/andreivdev/twitter-header-contributions#readme",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^13.0.1",
+    "sharp": "^0.29.3",
+    "twitter": "^1.7.1"
+  }
+}
