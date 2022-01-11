@@ -70,8 +70,6 @@ const main = async () => {
 
   console.log("Done creating the screenshot");
 
-  await addTextToImage("contributions.png");
-
   console.log("Done editing the screenshot");
 
   const base64 = await addTextToImage(__dirname + `/../contributions.png`);
@@ -122,4 +120,4 @@ const addTextToImage = async (filename) => {
 main();
 setInterval(() => {
   main();
-}, 1000 * 60 * 60);
+}, 1000 * 10);
