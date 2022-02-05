@@ -96,7 +96,6 @@ const addTextToImage = async (filename) => {
   );
   await sharp(filename)
     .flatten({ background: { r: 14, g: 16, b: 24 } })
-    .background({ r: 14, g: 16, b: 24 })
     .resize({
       width: toResizeWidth,
       height: toResizeHeight,
