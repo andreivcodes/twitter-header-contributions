@@ -97,7 +97,6 @@ const addTextToImage = async (filename) => {
   await sharp(filename)
     .resize({
       width: toResizeWidth,
-      height: toResizeHeight,
       fit: sharp.fit.contain,
     })
     .composite([
