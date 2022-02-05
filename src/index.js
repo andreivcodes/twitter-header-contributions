@@ -31,7 +31,7 @@ const main = async () => {
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1000, height: 800, deviceScaleFactor: 1 });
+  await page.setViewport({ width: 2000, height: 1600, deviceScaleFactor: 1 });
 
   console.log("go to page");
 
