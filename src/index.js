@@ -89,9 +89,8 @@ const main = async () => {
 };
 
 const addTextToImage = async (filename) => {
-  const beforeResize = await loadImage(filename);
-  const toResizeWidth = 1000; //beforeResize.width + 100;
-  const toResizeHeight = (beforeResize.height + 10) * 2;
+  const toResizeWidth = 1500; //beforeResize.width + 100;
+  const toResizeHeight = 500;
   const roundedCorners = Buffer.from(
     `<svg><rect x="0" y="0" width="${toResizeWidth}" height="${toResizeHeight}" rx="16" ry="16"/></svg>`
   );
