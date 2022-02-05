@@ -104,7 +104,6 @@ const addTextToImage = async (filename) => {
       {
         input: roundedCorners,
         blend: "dest-in",
-        ß,
       },
     ])
     .toFile(__dirname + `/../rounded_corner.png`);
