@@ -95,7 +95,7 @@ const addTextToImage = async (filename) => {
     `<svg><rect x="0" y="0" width="${toResizeWidth}" height="${toResizeHeight}" rx="16" ry="16"/></svg>`
   );
   await sharp(filename)
-    .resize(toResizeWidth, toResizeHeight)
+    .resize(toResizeWidth, toResizeHeight, sharp.fit.contain)
     .composite([
       {
         input: roundedCorners,
