@@ -99,7 +99,7 @@ const addTextToImage = async (filename) => {
       width: toResizeWidth,
       height: toResizeHeight,
       fit: sharp.fit.contain,
-      background: { r: 14, g: 16, b: 24
+      background: { r: 14, g: 16, b: 24 },
     })
     .composite([
       {
