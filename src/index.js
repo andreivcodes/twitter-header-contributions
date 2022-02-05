@@ -95,11 +95,16 @@ const addTextToImage = async (filename) => {
     `<svg><rect x="0" y="0" width="${toResizeWidth}" height="${toResizeHeight}" rx="16" ry="16"/></svg>`
   );
   await sharp(filename)
-    .resize(toResizeWidth, toResizeHeight, sharp.fit.contain)
+    .resize({
+      width: toResizeWidth,
+      height: toResizeHeight,
+      fit: sharp.fit.contain,
+    })
     .composite([
       {
         input: roundedCorners,
         blend: "dest-in",
+        ß,
       },
     ])
     .toFile(__dirname + `/../rounded_corner.png`);
