@@ -116,7 +116,7 @@ const addTextToImage = async (filename) => {
   ctx.fillStyle = "rgb(15, 16, 24)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.drawImage(img, 0, -300);
+  ctx.drawImage(img, 0, -100);
 
   return canvas.toBuffer();
 };
