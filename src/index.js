@@ -95,8 +95,10 @@ const addTextToImage = async (filename) => {
     `<svg><rect x="0" y="0" width="${toResizeWidth}" height="${toResizeHeight}" rx="16" ry="16"/></svg>`
   );
   await sharp(filename)
+    .flatten({ background: { r: 14, g: 16, b: 24 } })
     .resize({
       width: toResizeWidth,
+      height: toResizeHeight,
       fit: sharp.fit.contain,
     })
     .composite([
