@@ -105,7 +105,7 @@ const addTextToImage = async (filename) => {
     .toFile(__dirname + `/../rounded_corner.png`);
 
   const img = await loadImage(__dirname + `/../rounded_corner.png`);
-  const canvas = createCanvas(1000, 420);
+  const canvas = createCanvas(1500, 500);
   const ctx = canvas.getContext("2d");
 
   ctx.fillStyle = "rgb(15, 16, 24)";
