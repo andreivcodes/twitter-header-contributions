@@ -22,7 +22,7 @@
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
     "puppeteer": "^13.0.1",
-    "sharp": "^0.29.3",
+    "sharp": "^0.30.5",
     "twitter": "^1.7.1"
   }
 }
